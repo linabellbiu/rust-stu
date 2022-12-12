@@ -1,0 +1,2 @@
+# rust-stu
+Learn Rust
