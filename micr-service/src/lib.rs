@@ -1,5 +1,5 @@
 use std::sync::{Arc, mpsc, Mutex};
-use std::{thread, time};
+use std::{thread};
 
 pub struct ThreadPool {
     workers: Vec<Worker>,
