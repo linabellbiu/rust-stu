@@ -15,7 +15,7 @@ async fn main() -> Result<()> {
         .infer_schema(Some(16))
         .finish()?;
 
-    let filtered = df.filter(&df.column("new_deaths")?.gt(500)?)?;
+    let filtered = df.filter(&df.column("new_deaths")?.gt(500)?).unwrap();
 
 
     println!(
